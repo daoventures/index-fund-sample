@@ -1,0 +1,152 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.one {
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .flex-text-1-2 {
+        width: fit-content;
+        margin-top: 6vh;
+        margin-left: 1vw;
+        display: flex;
+        flex-direction: column;
+        .text-1 {
+            font-size: 3vw;
+            font-weight: 800;
+            line-height: 1;
+        }
+    
+        .text-2 {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 2vh;
+            font-size: 3vw;
+            font-weight: 370;
+            line-height: 1;
+        }
+    }
+
+    .text-3 {
+        margin-top: 0.5vh;
+        margin-left: 18.5vw;
+        font-size: 8.4vw;
+        font-weight: 800;
+        line-height: 1;
+    }
+
+    .chapter-block {
+        
+        pointer-events: none;
+        margin-top: 34vh;
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .chapter-text {
+            font-size: 3vw;
+            font-weight: 300;
+            line-height: 1;
+        }
+
+        .chapter-text-block {
+            position: relative;
+            display: flex;
+            svg {
+                width: 43vw;
+                height: 12vh;
+            }
+
+            .true-text {
+                margin-left: 1.5vw;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                position: absolute;
+                font-size: 3vw;
+                color: black;
+                text-transform: capitalize;
+            }
+        }
+        .just-block {
+            position: relative;
+            display: flex;
+
+            svg {
+                width: 5.2vw;
+                height: 13vh;
+            }
+        }
+    }
+
+    .getting-started {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-bottom: 2vh;
+
+        font-size: 1.25vw;
+    }
+}
+
+.page-one {
+    width: fit-content;
+    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .title {
+        margin-top: 4vh;
+        margin-left: 3vw;
+        font-size: 3.2svw;
+        font-weight: 800;
+        line-height: 1;
+    }
+
+    .fields-group {
+        
+        margin-top: 6vh;
+        margin-left: 3vw;
+
+        display: flex;
+        width: 100%;
+        gap: 2vw;
+        align-items: center;
+        .fields-1 {
+            display: flex;
+            flex-direction: column;
+            gap: 4vh;
+        }
+
+        .fields-2 {
+            display: flex;
+            flex-direction: column;
+            gap: 4vh;
+        }
+
+        .submit {
+            font-size: 2.5vw;
+            font-weight: 800;
+            line-height: 1 !important;
+            background-color: unset;
+            padding: 0;
+            border: unset;
+            height: unset;
+        }
+
+        .mantine-Input-input {
+            height: 5vh;
+            width: 20vw;
+            border-radius: 0;
+        }
+    }
+}
